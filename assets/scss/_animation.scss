@@ -1,0 +1,136 @@
+// 말풍선 효과
+@-webkit-keyframes balloon {
+  from {
+    -webkit-transform: translateY(5px);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+  }
+}
+@keyframes balloon {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+// 글자 나타남
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// 그래프 애니메이션
+@-webkit-keyframes skill {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: graph;
+  }
+}
+@keyframes skill {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: graph;
+  }
+}
+
+// quick 나타나기 
+@keyframes quick-1 {
+  0% {
+    transform: translateX(500%);
+  }
+
+  60% {
+    transform: translateX(0);
+  }
+}
+@keyframes quick-2 {
+  0% {
+    transform: translateX(500%);
+  }
+
+  20% {
+    transform: translateX(500%);
+  }
+
+  80% {
+    transform: translateX(0);
+  }
+}
+@keyframes quick-3 {
+  0% {
+    transform: translateX(500%);
+  }
+
+  40% {
+    transform: translateX(500%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// 포트폴리오 텍스트 후버효과
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: normal;
+  }
+  50% {
+    letter-spacing: 0.1em;
+  }
+  100% {
+    letter-spacing: normal;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: normal;
+  }
+  50% {
+    letter-spacing: 0.1em;
+  }
+  100% {
+    letter-spacing: normal;
+  }
+}
+
+
+// 서브 페이지 손가락 애니메이션
+@keyframes scroll-down {
+  from {
+    bottom: 35px;
+  }
+
+  to {
+    bottom: 25px;
+  }
+}

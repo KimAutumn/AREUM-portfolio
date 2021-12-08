@@ -1,0 +1,17 @@
+@mixin graph ($graph) {
+ @if $graph == 'high' {
+  width: 270px
+ }
+
+ @else if $graph == 'mid-high' {
+  width: 230px;
+ }
+
+ @else if $graph == 'middle' {
+  width: 135px;
+ }
+
+ @else if $graph == 'low' {
+  width: 100px;
+ }
+}
