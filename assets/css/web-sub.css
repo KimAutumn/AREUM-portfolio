@@ -1,0 +1,20 @@
+.container { max-width: 1160px; margin: 0 auto; text-align: center; }
+
+.hd { padding-top: 50px; padding-bottom: 40px; }
+
+.hd .sub-tit { font-size: 18px; font-weight: 500; }
+
+.hd .tit { font-family: 'Noto Sans KR'; font-size: 36px; font-weight: 500; }
+
+.hd .desc { font-size: 18px; font-weight: 500; margin-top: 30px; }
+
+.section .img-area img { display: block; width: 100%; }
+
+.section .img-area img:nth-child(2) { margin-top: 20px; }
+
+.section .txt-area { margin-top: 60px; margin-bottom: 170px; }
+
+.section .txt-area .tit { font-size: 36px; font-weight: 400; }
+
+.section .txt-area .desc { font-family: 'KOTRA_GOTHIC'; font-size: 18px; margin-top: 30px; }
+/*# sourceMappingURL=web-sub.css.map */
