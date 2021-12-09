@@ -40,8 +40,11 @@
    font-family: 'KOTRA_GOTHIC';
 
    .img-area {
+    width: 748px;
+    
     img {
      display: block;
+     width: 100%;
     }
    }
 
@@ -112,7 +115,7 @@
    margin: 0 -12px;
 
    .list-item {
-    flex: 1 1 calc((100% / 3) - 24px);
+    flex: 0 1 calc((100% / 3) - 24px);
     text-align: center;
     margin: 0 12px 24px;
 

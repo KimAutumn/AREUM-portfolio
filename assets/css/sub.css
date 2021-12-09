@@ -101,7 +101,9 @@
 
 .web .content [class^="cont-"] { background-color: #1b1b1b; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; padding: 22px; color: #fff; font-family: 'KOTRA_GOTHIC'; }
 
-.web .content [class^="cont-"] .img-area img { display: block; }
+.web .content [class^="cont-"] .img-area { width: 748px; }
+
+.web .content [class^="cont-"] .img-area img { display: block; width: 100%; }
 
 .web .content [class^="cont-"] .txt-area .tit { font-size: 18px; }
 
@@ -127,7 +129,7 @@
 
 .character .content .content-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -12px; }
 
-.character .content .content-list .list-item { -webkit-box-flex: 1; -ms-flex: 1 1 calc((100% / 3) - 24px); flex: 1 1 calc((100% / 3) - 24px); text-align: center; margin: 0 12px 24px; }
+.character .content .content-list .list-item { -webkit-box-flex: 0; -ms-flex: 0 1 calc((100% / 3) - 24px); flex: 0 1 calc((100% / 3) - 24px); text-align: center; margin: 0 12px 24px; }
 
 .character .content .content-list .list-item .img-area { position: relative; overflow: hidden; }
 

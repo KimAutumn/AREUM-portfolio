@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,AAAC,CACV,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,MAAM,CACd,UAAU,CAAE,MAAM,CAClB,AAED,AAAA,GAAG,AAAC,CACH,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,IAAI,CACX",
+    "sources": [
+        "../scss/character-sub.scss"
+    ],
+    "names": [],
+    "file": "character-sub.min.css"
+}
