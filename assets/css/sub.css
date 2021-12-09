@@ -155,13 +155,17 @@
 
 .graphic .content .button { margin-bottom: 24px; }
 
-.graphic .content .button .btn { font-family: 'ChunkFive Regular'; font-size: 24px; margin: 0 12px; }
+.graphic .content .button .btn { font-family: 'ChunkFive Regular'; font-size: 24px; margin: 0 12px; -webkit-transition: all 0.3s; transition: all 0.3s; }
+
+.graphic .content .button .btn:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
 
 .graphic .content .portfolio-graphic { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -12px; }
 
-.graphic .content .portfolio-graphic .mix { -webkit-box-flex: 0; -ms-flex: 0 1 calc((100% / 3) - 24px); flex: 0 1 calc((100% / 3) - 24px); margin: 0 12px 24px; }
+.graphic .content .portfolio-graphic .mix { -webkit-box-flex: 0; -ms-flex: 0 1 calc((100% / 3) - 24px); flex: 0 1 calc((100% / 3) - 24px); margin: 0 12px 24px; overflow: hidden; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
-.graphic .content .portfolio-graphic .mix img { display: block; width: 100%; }
+.graphic .content .portfolio-graphic .mix:hover img { -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+.graphic .content .portfolio-graphic .mix img { display: block; width: 100%; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
 .ft { background-color: #1b1b1b; font-size: 14px; color: #fff; line-height: 80px; }
 

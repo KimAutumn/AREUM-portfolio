@@ -195,10 +195,16 @@
 
   .button {
    margin-bottom: 24px;
+
    .btn {
     font-family: 'ChunkFive Regular';
     font-size: 24px;
     margin: 0 12px;
+    transition: all 0.3s;
+
+    &:hover {
+     transform: scale(1.1);
+    }
    }
   } 
   
@@ -210,10 +216,19 @@
    .mix {
     flex: 0 1 calc((100% / 3) - 24px);
     margin: 0 12px 24px;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &:hover {
+     img {
+      transform: scale(1.1);
+     }
+    }
 
     img {
      display: block;
      width: 100%;
+     transition: all 0.3s;
     }
    }
   }
