@@ -65,37 +65,74 @@
 // quick 나타나기 
 @keyframes quick-1 {
   0% {
-    transform: translateX(500%);
-  }
-
-  60% {
-    transform: translateX(0);
-  }
-}
-@keyframes quick-2 {
-  0% {
-    transform: translateX(500%);
-  }
-
-  20% {
-    transform: translateX(500%);
-  }
-
-  80% {
-    transform: translateX(0);
-  }
-}
-@keyframes quick-3 {
-  0% {
-    transform: translateX(500%);
-  }
-
-  40% {
-    transform: translateX(500%);
+    right: -150px;
   }
 
   100% {
-    transform: translateX(0);
+    right: 60px;
+  }
+}
+// @keyframes quick-2 {
+//   0% {
+//     transform: translateX(500%);
+//   }
+
+//   20% {
+//     transform: translateX(500%);
+//   }
+
+//   80% {
+//     transform: translateX(0);
+//   }
+// }
+// @keyframes quick-3 {
+//   0% {
+//     transform: translateX(500%);
+//   }
+
+//   40% {
+//     transform: translateX(500%);
+//   }
+
+//   100% {
+//     transform: translateX(0);
+//   }
+// }
+
+// quick 모바일버전 효과
+@keyframes quick-mob-1 {
+  0% {
+    bottom: -150px;
+  }
+
+  100% {
+    bottom: 50px;
+  }
+}
+@keyframes quick-mob-2 {
+  0% {
+    transform: translateY(500%);
+  }
+
+  20% {
+    transform: translateY(500%);
+  }
+
+  80% {
+    transform: translateY(0);
+  }
+}
+@keyframes quick-mob-3 {
+  0% {
+    transform: translateY(500%);
+  }
+
+  40% {
+    transform: translateY(500%);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 

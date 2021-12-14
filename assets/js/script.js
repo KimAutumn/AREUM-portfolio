@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.about-slider').slick({
     dots: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     speed: 1500,
   });
@@ -22,8 +22,11 @@ $(document).ready(function(){
     } 
   });
 
-  // 
+  // mixitup
   $(function(){
     var mixer = mixitup('.portfolio-graphic');
   });
+
+
+  console.log($(window).width());
 })

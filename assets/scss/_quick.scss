@@ -6,7 +6,8 @@
  position: fixed;
  width: 55px;
  height: 52px;
- right: 60px;
+//  right: 60px;
+//  transform: translateX(100%);
 
  .img-box {
    display: none;
@@ -26,10 +27,11 @@
    }
  }
 }
+
 .quick-green {
  background-image: url(../images/quick-green.png);
  bottom: 300px;
- animation: quick-1 1s;
+ animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) both;
 
  .img-box {
    img {
@@ -41,10 +43,11 @@
    background-image: url(../images/quick-green-hover.png);
  }
 }
+
 .quick-yellow {
  background-image: url(../images/quick-yellow.png);
  bottom: 200px;
- animation: quick-2 1s;
+ animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.2s both;
 
  .img-box {
    img {
@@ -56,10 +59,11 @@
    background-image: url(../images/quick-yellow-hover.png);
  }
 }
+
 .quick-pink {
  background-image: url(../images/quick-pink.png);
  bottom: 100px;
- animation: quick-3 1s;
+ animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.4s both;
 
  .img-box {
    img {
@@ -70,4 +74,27 @@
  &:hover {
    background-image: url(../images/quick-pink-hover.png);
  }
+}
+
+@include mobile {
+  [class^= 'quick-'] {
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .quick-green {
+    transform: translateX(-250%);
+    animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) both;
+    left: 47%;
+  }
+
+  .quick-yellow {
+    animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) 0.2s both;
+  }
+
+  .quick-pink {
+    transform: translateX(150%);
+    animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) 0.4s both;
+    left: 53%;
+  }
 }

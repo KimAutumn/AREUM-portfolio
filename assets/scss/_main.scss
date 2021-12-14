@@ -5,10 +5,12 @@
   
   .kv-bg {
     position: relative;
-    height: 865px;
+    // height: 865px;
+    padding-top: 45.5%;
     background-image: url(../images/kv-main.gif);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
+    background-size: contain;
 
     img {
       display: block;
@@ -19,17 +21,18 @@
       position: absolute;
       left: 45%;
       top: 35px;
-      width: 819px;
+      width: 43%;
       height: 100%;
       background-image: url(../images/kv-obj.png);
       background-repeat: no-repeat;
-      padding: 120px 150px;
+      background-size: contain;
+      padding: 6% 8%;
       -webkit-animation: balloon 1s ease-out infinite alternate;
       animation: balloon 1s ease-out infinite alternate;
 
       .kv-txt {
         -webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	      animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
       }
     }
   }
@@ -95,6 +98,7 @@
   .list-1 {
     .txt-area {
       text-align: right;
+      margin-left: 30px;
   
       .tit {
         color: #25ec88;
@@ -154,6 +158,7 @@
         margin-top: 25px;
 
         li {
+          width: calc(50% - 20px);
           margin-right: 20px;
           margin-bottom: 28px;
         }
@@ -166,7 +171,7 @@
 
         .graph {
           position: relative;
-          width: $graph-width;
+          width: 100%;
           height: 8px;
           border-radius: 10px;
           background-color: #f0f0f0;
@@ -266,6 +271,7 @@
   
   .sec-body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 100px;
@@ -363,8 +369,10 @@
         }
   
         .img-area {
+          flex: 0 0 auto;
           width: 451px;
           height: 304px;
+          background-repeat: no-repeat;
   
           &.img-web {
             background-image: url(../images/portfolio-web.png);
@@ -483,6 +491,134 @@
   }
 
   
+}
+
+@include tablet-1200 {
+  .inner {
+    padding: 0 30px;
+   }
+ 
+   .what-i-do {
+    padding: 0;
+   }
+};
+
+@include tablet-900 {
+  // about
+   .about {
+    .about-slider {
+     .list-1 {
+      flex-direction: column-reverse;
+
+      .txt-area {
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 0;
+      }
+     }
+
+     .list-2 {
+       flex-direction: column;
+
+       .txt-area {
+         text-align: center;
+         margin-top: 30px;
+
+         .desc {
+           text-align: left;
+           margin: 30px 20px 0;
+
+           li {
+             flex: 1 1 auto;
+           }
+         }
+       }
+
+       .img-area {
+         margin-right: 0;
+       }
+     }
+
+     .list-3 {
+       flex-direction: column-reverse;
+
+       .txt-area {
+         text-align: center;
+         margin-top: 30px;
+
+         .desc {
+           margin-right: 30px;
+           margin-left: 50px;
+
+           li {
+             width: calc(50% - 20px);
+             margin-bottom: 20px;
+             text-align: left;
+           }
+         }
+       }
+     }
+    }
+   }
+ 
+  //  what I do
+   .what-i-do {
+    .sec-body {
+     .list-item {
+      width: 50%;
+      
+      &:first-child,
+      &:nth-child(2) {
+       margin-bottom: 100px;
+      }
+     }
+    }
+   }
+ 
+   // portfolio
+   .portfolio {
+    .sec-body {
+     .list-item {
+      a {
+       flex-wrap: wrap;
+       flex-direction: column-reverse;
+       align-items: flex-start;
+ 
+       .txt-area {
+        flex-basis: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+       }
+ 
+       .img-area {
+        flex: 1 1 100%;
+        width: 100%;
+        padding-top: 67.4%;
+        background-size: cover;
+       }
+      }
+     }
+    }
+   }
+}
+
+@include mobile {
+  // kv
+  .kv {
+    .kv-bg {
+      background-image: url(../images/kv-mob.gif);
+      background-size: cover;
+      padding-top: 202.7%;
+
+      .kv-obj {
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-image: url(../images/kv-mob-obj.png);
+        padding: 27% 13%;
+      }
+    }
+  }
 }
 
 

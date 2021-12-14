@@ -1,17 +1,36 @@
 @mixin graph ($graph) {
  @if $graph == 'high' {
-  width: 270px
+  width: 95%;
  }
 
  @else if $graph == 'mid-high' {
-  width: 230px;
+  width: 80%;;
  }
 
  @else if $graph == 'middle' {
-  width: 135px;
+  width: 50%;
  }
 
  @else if $graph == 'low' {
-  width: 100px;
+  width: 40%;
+ }
+}
+
+// media query
+@mixin tablet-1200 {
+ @media screen and (max-width: 1200px) {
+  @content;
+ }
+}
+
+@mixin tablet-900 {
+ @media screen and (max-width: 900px) {
+  @content;
+ }
+}
+
+@mixin mobile {
+ @media screen and (max-width: 720px) {
+  @content;
  }
 }
