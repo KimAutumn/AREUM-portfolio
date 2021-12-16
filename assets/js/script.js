@@ -29,4 +29,10 @@ $(document).ready(function(){
 
 
   console.log($(window).width());
+
+
+  // hamburger
+  $('.hamburger').click(function(){
+    $(this).toggleClass('active')
+  });
 })

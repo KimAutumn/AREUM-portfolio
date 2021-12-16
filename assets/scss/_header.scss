@@ -56,6 +56,12 @@
             overflow: visible;
             padding: 8px 0;
           }
+
+          > a {
+            &::after {
+              text-decoration: none;
+            }
+          }
         } 
       }
       
@@ -105,11 +111,116 @@
     }
 
     .gnb {
-      position: absolute;
+      background-color: rgba($color: #3b21b0, $alpha: .9);
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
       display: block;
+      text-align: center;
+      padding-top: 80px;
+      // opacity: 0;
 
       a {
         font-size: 36px;
+        font-weight: 500;
+      }
+
+      .dep1 {
+        line-height: 100px;
+        margin-left: 0;
+
+        &:active {
+          > a {
+            text-decoration: underline;
+          }
+        }
+
+        &-port {
+          &:hover {
+            .dep2 {
+              height: 316px;
+            }
+          }
+        }
+
+        .dep2 {
+          position: relative;
+          background-color: transparent;
+          width: auto;
+          line-height: 100px;
+  
+          a {
+            font-size: 30px;
+
+            &:hover {
+              background-color: transparent;
+              color: #fff;
+              text-decoration: underline;
+            } 
+
+            &:active {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .hamburger {
+      position: absolute;
+      top: 50%;
+      right: 3%;
+      z-index: 3;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+
+      li {
+        position: absolute;
+        left: 5%;
+        transform: translateY(-50%);
+        width: 90%;
+        height: 8px;
+        background: #fff;
+        border-radius: 20px;
+        transition: .9s;
+        opacity: 1;
+      }
+
+      .line1 {
+        top: 20%;
+      }
+
+      .line2,
+      .line3 {
+        top: 50%;
+      }
+      
+      .line4 {
+        top: 80%;
+      }
+
+      &.active {
+        .line1 {
+          top: -20%;
+          opacity: 0;
+        }
+
+        .line2 {
+          transform: translateY(-50%)rotate(45deg);
+        }
+
+        .line3 {
+          transform: translateY(-50%)rotate(-45deg);
+        }
+
+        .line4 {
+          top: 120%;
+          opacity: 0;
+        }
       }
     }
   }
