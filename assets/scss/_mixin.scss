@@ -1,36 +1,36 @@
 @mixin graph ($graph) {
- @if $graph == 'high' {
-  width: 95%;
- }
+  @if $graph == 'high' {
+    width: 95%;
+  }
 
- @else if $graph == 'mid-high' {
-  width: 80%;;
- }
+  @else if $graph == 'mid-high' {
+    width: 80%;;
+  }
 
- @else if $graph == 'middle' {
-  width: 50%;
- }
+  @else if $graph == 'middle' {
+    width: 50%;
+  }
 
- @else if $graph == 'low' {
-  width: 40%;
- }
+  @else if $graph == 'low' {
+    width: 40%;
+  }
 }
 
 // media query
 @mixin tablet-1200 {
- @media screen and (max-width: 1200px) {
-  @content;
- }
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin tablet-900 {
- @media screen and (max-width: 900px) {
-  @content;
- }
+  @media screen and (max-width: 900px) {
+    @content;
+  }
 }
 
-@mixin mobile {
- @media screen and (max-width: 720px) {
-  @content;
- }
+@mixin tablet-720 {
+  @media screen and (max-width: 720px) {
+    @content;
+  }
 }

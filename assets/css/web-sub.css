@@ -1,4 +1,8 @@
-.container { max-width: 1160px; margin: 0 auto; text-align: center; }
+.inner { max-width: 1160px; margin: 0 auto; padding: 0 110px; }
+
+.container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 125px; }
+
+.inner { padding: 0; }
 
 .hd { padding-top: 50px; padding-bottom: 40px; }
 

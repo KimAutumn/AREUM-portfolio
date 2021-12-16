@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,AAAC,CACV,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,MAAM,CACd,UAAU,CAAE,MAAM,CAClB,AAED,AAAA,GAAG,AAAC,CACH,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,IAAI,CACX",
+    "mappings": "ACAA,AAAA,MAAM,AAAC,CACL,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,MAAM,CACd,OAAO,CAAE,OAAO,CACjB,AAED,AAAA,UAAU,AAAC,CACT,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,aAAa,CAC9B,WAAW,CAAE,MAAM,CACnB,OAAO,CAAE,OAAO,CACjB,ADTD,AAAA,MAAM,AAAC,CACL,OAAO,CAAE,CAAC,CACX,AAED,AAAA,GAAG,AAAC,CACF,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,IAAI,CACZ",
     "sources": [
-        "../scss/character-sub.scss"
+        "../scss/character-sub.scss",
+        "../scss/_common.scss"
     ],
     "names": [],
     "file": "character-sub.min.css"

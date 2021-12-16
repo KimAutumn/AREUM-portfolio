@@ -1,10 +1,10 @@
-.container {
- max-width: 1160px;
- margin: 0 auto;
- text-align: center;
+@import './common';
+
+.inner {
+  padding: 0;
 }
 
 img {
- display: block;
- width: 100%;
+  display: block;
+  width: 100%;
 }

@@ -27,12 +27,11 @@ $(document).ready(function(){
     var mixer = mixitup('.portfolio-graphic');
   });
 
-
-  console.log($(window).width());
-
-
+  
   // hamburger
   $('.hamburger').click(function(){
     $(this).toggleClass('active')
   });
+
+  console.log($(window).width());
 })

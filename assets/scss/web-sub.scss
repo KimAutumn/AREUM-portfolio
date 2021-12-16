@@ -1,56 +1,56 @@
-.container {
- max-width: 1160px;
- margin: 0 auto;
- text-align: center;
+@import './common';
+
+.inner {
+  padding: 0;
 }
 
 .hd {
- padding-top: 50px;
- padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
 
- .sub-tit {
-  font-size: 18px;
-  font-weight: 500;
- }
+  .sub-tit {
+    font-size: 18px;
+    font-weight: 500;
+  }
 
- .tit {
-  font-family: 'Noto Sans KR';
-  font-size: 36px;
-  font-weight: 500;
- }
+  .tit {
+    font-family: 'Noto Sans KR';
+    font-size: 36px;
+    font-weight: 500;
+  }
 
- .desc {
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 30px;
- }
+  .desc {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+  }
 }
 
 .section {
  .img-area {
-  img {
-   display: block;
-   width: 100%;
+    img {
+      display: block;
+      width: 100%;
 
-   &:nth-child(2) {
-    margin-top: 20px;
-   }
-  }
- }
-
- .txt-area {
-  margin-top: 60px;
-  margin-bottom: 170px;
-
-  .tit {
-   font-size: 36px;
-   font-weight: 400;
+      &:nth-child(2) {
+        margin-top: 20px;
+      }
+    }
   }
 
-  .desc {
-   font-family: 'KOTRA_GOTHIC';
-   font-size: 18px;
-   margin-top: 30px;
+  .txt-area {
+    margin-top: 60px;
+    margin-bottom: 170px;
+
+    .tit {
+      font-size: 36px;
+      font-weight: 400;
+    }
+
+    .desc {
+      font-family: 'KOTRA_GOTHIC';
+      font-size: 18px;
+      margin-top: 30px;
+    }
   }
- }
 }

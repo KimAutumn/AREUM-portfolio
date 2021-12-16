@@ -6,7 +6,9 @@
   left: 0;
   z-index: 1000;
 
-  
+  .hamburger {
+    display: none;
+  }
 
   .logo {
     line-height: 80px;
@@ -35,12 +37,16 @@
         > a {
           text-decoration: underline;
         }
+
+        .dep2 {
+          height: 150px;
+          padding: 8px 0;
+        }
       }
 
-      &-port {
+      &-arrow {
         position: relative;
         
-
         > a {
           &::after {
             content: '▼';
@@ -49,20 +55,6 @@
             margin-left: 9px;
           }
         }
-
-        &:hover {
-          .dep2 {
-            height: 150px;
-            overflow: visible;
-            padding: 8px 0;
-          }
-
-          > a {
-            &::after {
-              text-decoration: none;
-            }
-          }
-        } 
       }
       
       .dep2 {
@@ -113,15 +105,16 @@
     .gnb {
       background-color: rgba($color: #3b21b0, $alpha: .9);
       position: fixed;
-      top: 0;
+      top: -100%;
       right: 0;
-      bottom: 0;
+      // bottom: 0;
       left: 0;
       display: block;
       text-align: center;
-      padding-top: 80px;
-      transform: translateY(-100%);
-      transition: 0.3s;
+      padding-top: 150px;
+      // transform: translateY(-100%);
+      transition: all 0.9s;
+      opacity: 0;
 
       a {
         font-size: 36px;
@@ -137,12 +130,10 @@
             text-decoration: underline;
           }
         }
-
-        &-port {
-          &:hover {
-            .dep2 {
-              height: 316px;
-            }
+        
+        &:hover {
+          .dep2 {
+            height: 316px;
           }
         }
 
@@ -170,6 +161,7 @@
     }
 
     .hamburger {
+      display: block;
       position: absolute;
       top: 50%;
       right: 3%;
@@ -224,7 +216,9 @@
         }
 
         ~ .gnb {
-          transform: translateY(0);
+          top: 0;
+          bottom: 0;
+          opacity: 1;
         }
       }
     }

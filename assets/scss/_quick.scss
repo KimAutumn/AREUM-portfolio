@@ -1,82 +1,80 @@
 // quick
 [class^= 'quick-'] {
- background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
- position: fixed;
- width: 55px;
- height: 52px;
-//  right: 60px;
-//  transform: translateX(100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  width: 55px;
+  height: 52px;
 
- .img-box {
-   display: none;
-   position: relative;
+  .img-box {
+    display: none;
+    position: relative;
 
-   img {
-     position: absolute;
-     top: -35px;
-     left: 50%;
-     transform: translateX(-50%);
-   }
- }
+    img {
+      position: absolute;
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 
- &:hover {
-   .img-box {
-     display: block;
-   }
- }
+  &:hover {
+    .img-box {
+      display: block;
+    }
+  }
 }
 
 .quick-green {
- background-image: url(../images/quick-green.png);
- bottom: 300px;
- animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) both;
+  background-image: url(../images/quick-green.png);
+  bottom: 300px;
+  animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) both;
 
- .img-box {
-   img {
-     width: 59px;
-   }
- }
+  .img-box {
+    img {
+      width: 59px;
+    }
+  }
 
- &:hover {
-   background-image: url(../images/quick-green-hover.png);
- }
+  &:hover {
+    background-image: url(../images/quick-green-hover.png);
+  }
 }
 
 .quick-yellow {
- background-image: url(../images/quick-yellow.png);
- bottom: 200px;
- animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.2s both;
+  background-image: url(../images/quick-yellow.png);
+  bottom: 200px;
+  animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.2s both;
 
- .img-box {
-   img {
-     width: 121px;
-   }
- }
+  .img-box {
+    img {
+      width: 121px;
+    }
+  }
 
- &:hover {
-   background-image: url(../images/quick-yellow-hover.png);
- }
+  &:hover {
+    background-image: url(../images/quick-yellow-hover.png);
+  }
 }
 
 .quick-pink {
- background-image: url(../images/quick-pink.png);
- bottom: 100px;
- animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.4s both;
-
- .img-box {
-   img {
-     width: 100px;
-   }
- }
-
- &:hover {
-   background-image: url(../images/quick-pink-hover.png);
- }
+  background-image: url(../images/quick-pink.png);
+  bottom: 100px;
+  animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.4s both;
+  
+  .img-box {
+    img {
+      width: 100px;
+    }
+  }
+ 
+  &:hover {
+    background-image: url(../images/quick-pink-hover.png);
+  }
 }
 
-@include mobile {
+@include tablet-720 {
   [class^= 'quick-'] {
     bottom: 50px;
     left: 50%;
