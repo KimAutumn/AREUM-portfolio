@@ -489,11 +489,7 @@
 }
 
 @include tablet-1200 {
-  .inner {
-    padding: 0 50px;
-  }
- 
-   .what-i-do {
+  .what-i-do {
     padding: 0;
   }
 }
@@ -666,4 +662,35 @@
   }
 }
 
+@include mobile {
+  // contact 
+  .contact {
+    .sec-body {
+      padding-top: 120px;
 
+      .name {
+        margin-top: 100px;
+      }
+
+      .contact-info {
+        flex-direction: column;
+        margin-top: 25px;
+
+        .call,
+        .email {
+          margin: 12px 0;
+        }
+      }
+
+      .btn {
+        display: inline-block;
+        margin: auto;
+
+        button {
+          display: block;
+          margin: 24px 0;
+        }
+      }
+    }
+  }
+}

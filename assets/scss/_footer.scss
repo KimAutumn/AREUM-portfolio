@@ -4,3 +4,10 @@
   color: #fff;
   line-height: 80px;
 }
+
+@include tablet-720 {
+  .ft {
+    line-height: 40px;
+    padding: 12px 0;
+  }
+}

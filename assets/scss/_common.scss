@@ -11,3 +11,20 @@
   padding: 0 125px;
 }
 
+
+@include tablet-1200 {
+  .inner {
+    padding: 0 50px;
+  }
+}
+@include tablet-720 {
+  .inner {
+    padding: 0 25px;
+  }
+  
+  .container {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+

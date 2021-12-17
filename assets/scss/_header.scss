@@ -88,15 +88,15 @@
 @include tablet-900 {
   .hd {
     .logo {
-      display: inline-block;
+      // display: inline-block;
       margin: 0 auto;
 
       a {
-        display: block;
+        // display: block;
 
         img {
-          display: block;
-          width: 254px;
+          // display: block;
+          width: 100%;
           padding: 16.5px 0;
         }
       }
