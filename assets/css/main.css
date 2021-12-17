@@ -288,7 +288,9 @@
   .portfolio .sec-body .list-item:active .txt-area .tit { -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
   .portfolio .sec-body .list-item:active .img-area.img-web { background-image: url(../images/portfolio-web-hover.gif); }
   .portfolio .sec-body .list-item:active .img-area.img-character { background-image: url(../images/portfolio-character-hover.gif); }
-  .portfolio .sec-body .list-item:active .img-area.img-graphic { background-image: url(../images/portfolio-graphic-hover.gif); } }
+  .portfolio .sec-body .list-item:active .img-area.img-graphic { background-image: url(../images/portfolio-graphic-hover.gif); }
+  .contact .sec-body .contact-info .call, .contact .sec-body .contact-info .email { margin: 0 12px; }
+  .contact .sec-body .btn button { margin: 0 12px; } }
 
 .ft { background-color: #1b1b1b; font-size: 14px; color: #fff; line-height: 80px; }
 

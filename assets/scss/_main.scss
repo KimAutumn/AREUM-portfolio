@@ -646,6 +646,24 @@
       }
     }
   }
+
+  // contact
+  .contact {
+    .sec-body {
+      .contact-info {
+        .call,
+        .email {
+          margin: 0 12px;
+        }
+      }
+
+      .btn {
+        button {
+          margin: 0 12px;
+        }
+      }
+    }
+  }
 }
 
 
