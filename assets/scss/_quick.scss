@@ -80,19 +80,32 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
   .quick-green {
     transform: translateX(-250%);
     animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) both;
     left: 47%;
+
+    &:active {
+      background-image: url(../images/quick-green-hover.png);
+    }
   }
 
   .quick-yellow {
     animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) 0.2s both;
+    
+    &:active {
+      background-image: url(../images/quick-yellow-hover.png);
+    }
   }
 
   .quick-pink {
     transform: translateX(150%);
     animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) 0.4s both;
     left: 53%;
+
+    &:active {
+      background-image: url(../images/quick-pink-hover.png);
+    }
   }
 }

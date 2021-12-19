@@ -17,6 +17,13 @@
     padding: 0 50px;
   }
 }
+
+@include tablet-900 {
+  .container {
+    padding: 0 100px;
+  }
+}
+
 @include tablet-720 {
   .inner {
     padding: 0 25px;

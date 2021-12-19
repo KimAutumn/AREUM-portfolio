@@ -34,50 +34,50 @@
   .content {
     margin: 100px 0;
 
-  [class^="cont-"] {
-    background-color: #1b1b1b;
-    display: flex;
-    align-items: flex-end;
-    padding: 22px;
-    color: #fff;
-    font-family: 'KOTRA_GOTHIC';
+    [class^="cont-"] {
+      background-color: #1b1b1b;
+      display: flex;
+      align-items: flex-end;
+      padding: 22px;
+      color: #fff;
+      font-family: 'KOTRA_GOTHIC';
 
-    .img-area {
-      width: 748px;
+      .img-area {
+        width: 50%;
 
-      img {
-        display: block;
-        width: 100%;
+        img {
+          display: block;
+          width: 100%;
+        }
       }
-    }
 
-    .txt-area {
-      .tit {
+      .txt-area {
+        .tit {
+          font-size: 18px;
+        }
+
+        .sub-tit {
+          font-size: 24px;
+        }
+
+        .desc {
+          font-size: 18px;
+          margin-top: 24px;
+        }
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #25ec88;
+        color: black;
+        width: 165px;
+        line-height: 51px;
+        font-family: 'KOTRA_GOTHIC';
         font-size: 18px;
-      }
-
-      .sub-tit {
-        font-size: 24px;
-      }
-
-      .desc {
-        font-size: 18px;
+        text-align: center;
         margin-top: 24px;
       }
     }
-
-    .btn {
-      display: inline-block;
-      background-color: #25ec88;
-      color: black;
-      width: 165px;
-      line-height: 51px;
-      font-family: 'KOTRA_GOTHIC';
-      font-size: 18px;
-      text-align: center;
-      margin-top: 24px;
-    }
-  }
 
     .cont-right {
       // margin: 100px 0 100px 380px;
@@ -237,6 +237,130 @@
           transition: all 1s;
         }
       }
+    }
+  }
+}
+
+
+@include tablet-1200 {
+  .kv {
+    .tit {
+      font-size: 80px;
+      left: 6.667vw;
+    }
+    .scroll-down {
+      left: 6.667vw;
+    }
+  }
+
+  // web
+  .web {
+    .content {
+      .cont-right {
+        margin-left: 5%;
+      }
+
+      .cont-left {
+        margin-right: 5%;
+      }
+    }
+  }
+
+  // graphic
+  .graphic {
+    .content {
+      .portfolio-graphic {
+        margin: 0;
+        .mix {
+          flex: 0 1 calc((100% /2) - 24px);
+        }
+      }
+    }
+  }
+}
+
+@include tablet-900 {
+  .kv {
+    .tit {
+      font-size: 8vw;
+      bottom: 100px;
+    }
+    
+    .scroll-down {
+      img {
+        width: 90%;
+      }
+    }
+  }
+
+  // web
+  .web {
+    .content {
+      [class^="cont-"] {
+        flex-direction: column;
+
+        .txt-area {
+          margin-top: 22px;
+        }
+
+        .img-area {
+          width: 100%;
+        }
+      }
+
+      .cont-right {
+        align-items: flex-start;
+        margin-left: 10%;
+
+        .txt-area {
+          margin-left: 0;
+        }
+      }
+
+      .cont-left {
+        margin-right: 10%;
+        flex-direction: column-reverse;
+
+        .txt-area {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  // graphic
+  .graphic {
+    .content {
+      .portfolio-graphic {
+        margin: 0;
+        .mix {
+          flex: 0 1 calc(100% - 24px);
+        }
+      }
+    }
+  }
+}
+
+@include tablet-720 {
+  .kv {
+    background-size: cover;
+    padding-top: 202.7%;
+
+    .tit {
+      font-size: 9.333vw;
+    }
+
+    .scroll-down {
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  // web
+  .web {
+    .kv {
+      background-image: url(../images/kv-web-mob.png);
     }
   }
 }
