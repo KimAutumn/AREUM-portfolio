@@ -11,6 +11,9 @@
   padding: 0 125px;
 }
 
+.mob-br {
+  display: none;
+}
 
 @include tablet-1200 {
   .inner {
@@ -26,12 +29,18 @@
 
 @include tablet-720 {
   .inner {
-    padding: 0 25px;
+    padding: 0 20px;
   }
   
   .container {
     flex-direction: column;
     padding: 0;
+  }
+}
+
+@include mobile {
+  .mob-br {
+    display: block;
   }
 }
 

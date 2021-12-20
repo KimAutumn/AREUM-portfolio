@@ -343,20 +343,27 @@
           margin-bottom: 10px;
   
           .tit {
+            display: inline-block;
             position: relative;
             font-family: 'ChunkFive-Regular';
             font-size: 36px;
             margin-bottom: 15px;
   
             &::after {
-              position: absolute;
+              // position: absolute;
               content: "";
+              display: inline-block;
               background-image: url(../images/arrow.png);
+              background-repeat: no-repeat;
+              background-size: cover;
               width: 40px;
-              height: 29px;
-              top: 50%;
-              transform: translateY(-50%);
-              right: -50px;
+              height: 100%;
+              padding-top: 29px;
+              margin-bottom: -3px;
+              margin-left: 10px;
+              // top: 50%;
+              // transform: translateY(-50%);
+              // right: -50px;
             }
           }
       
@@ -663,6 +670,50 @@
 }
 
 @include mobile {
+  // about
+  .about {
+    .about-slider {
+      .list-3 {
+        .txt-area {
+          .desc {
+            margin-right: 0;
+            margin-left: 20px;
+  
+            li {
+              width: calc(50% - 20px);
+            }
+          }
+        }
+      }
+
+      .list-2 {
+        .txt-area {
+          .desc {
+            text-align: center;
+            margin-top: 0px;
+
+            li {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // what-i-do
+  .what-i-do {
+    .sec-body {
+      padding-bottom: 50px;
+      
+      .list-item {
+        width: 100%;
+
+        margin-bottom: 100px;
+      }
+    }
+  }
+
   // contact 
   .contact {
     .sec-body {

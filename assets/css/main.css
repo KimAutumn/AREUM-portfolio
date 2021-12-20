@@ -3,12 +3,16 @@
 
 .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 125px; }
 
+.mob-br { display: none; }
+
 @media screen and (max-width: 1200px) { .inner { padding: 0 50px; } }
 
 @media screen and (max-width: 900px) { .container { padding: 0 100px; } }
 
-@media screen and (max-width: 720px) { .inner { padding: 0 25px; }
+@media screen and (max-width: 720px) { .inner { padding: 0 20px; }
   .container { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 0; } }
+
+@media screen and (max-width: 570px) { .mob-br { display: block; } }
 
 @-webkit-keyframes balloon { from { -webkit-transform: translateY(5px); transform: translateY(5px); }
   to { -webkit-transform: translateY(-5px); transform: translateY(-5px); } }
@@ -226,9 +230,9 @@
 
 .portfolio .sec-body .list-item a .txt-area { color: #fff; margin-left: 10px; margin-bottom: 10px; }
 
-.portfolio .sec-body .list-item a .txt-area .tit { position: relative; font-family: 'ChunkFive-Regular'; font-size: 36px; margin-bottom: 15px; }
+.portfolio .sec-body .list-item a .txt-area .tit { display: inline-block; position: relative; font-family: 'ChunkFive-Regular'; font-size: 36px; margin-bottom: 15px; }
 
-.portfolio .sec-body .list-item a .txt-area .tit::after { position: absolute; content: ""; background-image: url(../images/arrow.png); width: 40px; height: 29px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); right: -50px; }
+.portfolio .sec-body .list-item a .txt-area .tit::after { content: ""; display: inline-block; background-image: url(../images/arrow.png); background-repeat: no-repeat; background-size: cover; width: 40px; height: 100%; padding-top: 29px; margin-bottom: -3px; margin-left: 10px; }
 
 .portfolio .sec-body .list-item a .txt-area .desc { font-size: 18px; font-weight: 400; }
 
@@ -297,7 +301,13 @@
   .contact .sec-body .contact-info .call, .contact .sec-body .contact-info .email { margin: 0 12px; }
   .contact .sec-body .btn button { margin: 0 12px; } }
 
-@media screen and (max-width: 570px) { .contact .sec-body { padding-top: 120px; }
+@media screen and (max-width: 570px) { .about .about-slider .list-3 .txt-area .desc { margin-right: 0; margin-left: 20px; }
+  .about .about-slider .list-3 .txt-area .desc li { width: calc(50% - 20px); }
+  .about .about-slider .list-2 .txt-area .desc { text-align: center; margin-top: 0px; }
+  .about .about-slider .list-2 .txt-area .desc li { margin-top: 20px; }
+  .what-i-do .sec-body { padding-bottom: 50px; }
+  .what-i-do .sec-body .list-item { width: 100%; margin-bottom: 100px; }
+  .contact .sec-body { padding-top: 120px; }
   .contact .sec-body .name { margin-top: 100px; }
   .contact .sec-body .contact-info { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-top: 25px; }
   .contact .sec-body .contact-info .call, .contact .sec-body .contact-info .email { margin: 12px 0; }
