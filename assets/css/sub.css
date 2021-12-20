@@ -210,12 +210,20 @@
 
 .graphic .content .portfolio-graphic .mix img { display: block; width: 100%; -webkit-transition: all 1s; transition: all 1s; }
 
+.mfp-arrow:after { border-right: none; border-left: none; width: 20px; background-image: url(../images/mfp-arrow.png); background-size: cover; background-repeat: no-repeat; background-position: center; padding-top: 10%; }
+
+.mfp-arrow:before { border-right: none; border-left: none; }
+
+.mfp-arrow-left:after { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
 @media screen and (max-width: 1200px) { .kv .tit { font-size: 80px; left: 6.667vw; }
   .kv .scroll-down { left: 6.667vw; }
   .web .content .cont-right { margin-left: 5%; }
   .web .content .cont-left { margin-right: 5%; }
+  .character .content .content-list { margin: 0; }
+  .character .content .content-list .list-item { -ms-flex-preferred-size: calc((100% / 2) - 24px); flex-basis: calc((100% / 2) - 24px); }
   .graphic .content .portfolio-graphic { margin: 0; }
-  .graphic .content .portfolio-graphic .mix { -webkit-box-flex: 0; -ms-flex: 0 1 calc((100% /2) - 24px); flex: 0 1 calc((100% /2) - 24px); } }
+  .graphic .content .portfolio-graphic .mix { -ms-flex-preferred-size: calc((100% /2) - 24px); flex-basis: calc((100% /2) - 24px); } }
 
 @media screen and (max-width: 900px) { .kv .tit { font-size: 8vw; bottom: 100px; }
   .kv .scroll-down img { width: 90%; }
@@ -226,13 +234,15 @@
   .web .content .cont-right .txt-area { margin-left: 0; }
   .web .content .cont-left { margin-right: 10%; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
   .web .content .cont-left .txt-area { margin-right: 0; }
-  .graphic .content .portfolio-graphic { margin: 0; }
-  .graphic .content .portfolio-graphic .mix { -webkit-box-flex: 0; -ms-flex: 0 1 calc(100% - 24px); flex: 0 1 calc(100% - 24px); } }
+  .character .content .content-list .list-item { -ms-flex-preferred-size: calc(100% - 24px); flex-basis: calc(100% - 24px); }
+  .graphic .content .portfolio-graphic .mix { -ms-flex-preferred-size: calc(100% - 24px); flex-basis: calc(100% - 24px); } }
 
 @media screen and (max-width: 720px) { .kv { background-size: cover; padding-top: 202.7%; }
   .kv .tit { font-size: 9.333vw; }
   .kv .scroll-down img { width: 80%; }
-  .web .kv { background-image: url(../images/kv-web-mob.png); } }
+  .web .kv { background-image: url(../images/kv-web-mob.png); }
+  .character .kv { background-image: url(../images/kv-character-mob.png); }
+  .graphic .kv { background-image: url(../images/kv-graphic-mob.png); } }
 
 .ft { background-color: #1b1b1b; font-size: 14px; color: #fff; line-height: 80px; }
 

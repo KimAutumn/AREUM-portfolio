@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 570px) { .mob-br { display: block; } }
 
-.inner { padding: 0; }
+.inner { padding: 0; text-align: center; }
 
 .hd { padding-top: 50px; padding-bottom: 40px; }
 

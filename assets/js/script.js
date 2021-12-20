@@ -33,5 +33,42 @@ $(document).ready(function(){
     $(this).toggleClass('active')
   });
 
-  console.log($(window).width());
+
+  // lightbox
+  // lightbox.option({
+  //   'albumLabel': false,
+  //   'maxHeight': 1080,
+  // });
+
+
+  // magnific popup
+  $('.mfp-motion').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: true,
+    fixedConentPos: true,
+    image: { verticalFit: true },
+    gallery: { enabled: true },
+    zoom: { enabled: true, duration: 400 },
+  });
+
+  $('.mfp-illust').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: true,
+    fixedConentPos: true,
+    image: { verticalFit: true },
+    gallery: { enabled: true },
+    zoom: { enabled: true, duration: 400 },
+  });
+
+  $('.mfp-emoticon').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: true,
+    fixedConentPos: true,
+    image: { verticalFit: true },
+    gallery: { enabled: true },
+    zoom: { enabled: true, duration: 400 },
+  });
 })

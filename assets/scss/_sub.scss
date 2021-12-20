@@ -241,6 +241,31 @@
   }
 }
 
+// magnific-popup
+.mfp-arrow {
+  &:after {
+    // background-color: red;
+    border-right: none;
+    border-left: none;
+    width: 20px;
+    background-image: url(../images/mfp-arrow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 10%;
+  }
+
+  &:before {
+    border-right: none;
+    border-left: none;
+  }
+}
+
+.mfp-arrow-left {
+  &:after {
+    transform: rotate(180deg);
+  }
+}
 
 @include tablet-1200 {
   .kv {
@@ -266,13 +291,26 @@
     }
   }
 
+  // character
+  .character {
+    .content {
+      .content-list {
+        margin: 0;
+
+        .list-item {
+          flex-basis: calc((100% / 2) - 24px);
+        }
+      }
+    }
+  }
+
   // graphic
   .graphic {
     .content {
       .portfolio-graphic {
         margin: 0;
         .mix {
-          flex: 0 1 calc((100% /2) - 24px);
+          flex-basis: calc((100% /2) - 24px);
         }
       }
     }
@@ -328,13 +366,23 @@
     }
   }
 
+  // character 
+  .character {
+    .content {
+      .content-list {
+        .list-item {
+          flex-basis: calc(100% - 24px);
+        }
+      }
+    }
+  }
+
   // graphic
   .graphic {
     .content {
       .portfolio-graphic {
-        margin: 0;
         .mix {
-          flex: 0 1 calc(100% - 24px);
+          flex-basis: calc(100% - 24px);
         }
       }
     }
@@ -361,6 +409,20 @@
   .web {
     .kv {
       background-image: url(../images/kv-web-mob.png);
+    }
+  }
+
+  // character 
+  .character {
+    .kv {
+      background-image: url(../images/kv-character-mob.png);
+    }
+  }
+
+  // graphic
+  .graphic {
+    .kv {
+      background-image: url(../images/kv-graphic-mob.png);
     }
   }
 }
