@@ -226,7 +226,7 @@
 
 .portfolio .sec-body .list-item a .txt-area { color: #fff; margin-left: 10px; margin-bottom: 10px; }
 
-.portfolio .sec-body .list-item a .txt-area .tit { position: relative; font-family: 'ChunkFive Regular'; font-size: 36px; margin-bottom: 15px; }
+.portfolio .sec-body .list-item a .txt-area .tit { position: relative; font-family: 'ChunkFive Regular' !important; font-size: 36px; margin-bottom: 15px; }
 
 .portfolio .sec-body .list-item a .txt-area .tit::after { position: absolute; content: ""; background-image: url(../images/arrow.png); width: 40px; height: 29px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); right: -50px; }
 
