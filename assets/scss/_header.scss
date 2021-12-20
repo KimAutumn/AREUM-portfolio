@@ -107,12 +107,10 @@
       position: fixed;
       top: -100%;
       right: 0;
-      // bottom: 0;
       left: 0;
       display: block;
       text-align: center;
       padding-top: 100px;
-      // transform: translateY(-100%);
       transition: all 0.9s;
       opacity: 0;
 
@@ -125,15 +123,10 @@
         line-height: 100px;
         margin-left: 0;
 
-        &:active {
-          > a {
-            text-decoration: underline;
-          }
-        }
-        
         &:hover {
           .dep2 {
-            height: 316px;
+            height: 0;
+            padding: 0;
           }
         }
 
@@ -142,20 +135,20 @@
           background-color: transparent;
           width: auto;
           line-height: 100px;
-  
+
           a {
             font-size: 30px;
 
             &:hover {
-              background-color: transparent;
+              background: transparent;
               color: #fff;
-              text-decoration: underline;
-            } 
-
-            &:active {
               text-decoration: underline;
             }
           }
+        }
+
+        .dep2.active {
+          height: 316px;
         }
       }
     }

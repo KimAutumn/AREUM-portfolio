@@ -115,12 +115,11 @@
   .hd .gnb { background-color: rgba(59, 33, 176, 0.9); position: fixed; top: -100%; right: 0; left: 0; display: block; text-align: center; padding-top: 100px; -webkit-transition: all 0.9s; transition: all 0.9s; opacity: 0; }
   .hd .gnb a { font-size: 36px; font-weight: 500; }
   .hd .gnb .dep1 { line-height: 100px; margin-left: 0; }
-  .hd .gnb .dep1:active > a { text-decoration: underline; }
-  .hd .gnb .dep1:hover .dep2 { height: 316px; }
+  .hd .gnb .dep1:hover .dep2 { height: 0; padding: 0; }
   .hd .gnb .dep1 .dep2 { position: relative; background-color: transparent; width: auto; line-height: 100px; }
   .hd .gnb .dep1 .dep2 a { font-size: 30px; }
-  .hd .gnb .dep1 .dep2 a:hover { background-color: transparent; color: #fff; text-decoration: underline; }
-  .hd .gnb .dep1 .dep2 a:active { text-decoration: underline; }
+  .hd .gnb .dep1 .dep2 a:hover { background: transparent; color: #fff; text-decoration: underline; }
+  .hd .gnb .dep1 .dep2.active { height: 316px; }
   .hd .hamburger { display: block; position: absolute; top: 50%; right: 3%; z-index: 3; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 45px; height: 45px; cursor: pointer; }
   .hd .hamburger li { position: absolute; left: 5%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 90%; height: 7px; background: #fff; border-radius: 20px; -webkit-transition: .9s; transition: .9s; opacity: 1; }
   .hd .hamburger .line1 { top: 20%; }
