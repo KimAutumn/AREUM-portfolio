@@ -441,6 +441,7 @@
         position: absolute;
         content: "";
         background-image: url(../images/ico-desc-top.png);
+        background-repeat: no-repeat;
         width: 44px;
         height: 34px;
         top: -60px;
@@ -452,6 +453,7 @@
         position: absolute;
         content: "";
         background-image: url(../images/ico-desc-bottom.png);
+        background-repeat: no-repeat;
         width: 44px;
         height: 34px;
         bottom: -60px;

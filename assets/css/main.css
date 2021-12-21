@@ -258,9 +258,9 @@
 
 .contact .sec-body .desc { position: relative; font-size: 18px; font-weight: 300; }
 
-.contact .sec-body .desc::before { position: absolute; content: ""; background-image: url(../images/ico-desc-top.png); width: 44px; height: 34px; top: -60px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.contact .sec-body .desc::before { position: absolute; content: ""; background-image: url(../images/ico-desc-top.png); background-repeat: no-repeat; width: 44px; height: 34px; top: -60px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
-.contact .sec-body .desc::after { position: absolute; content: ""; background-image: url(../images/ico-desc-bottom.png); width: 44px; height: 34px; bottom: -60px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.contact .sec-body .desc::after { position: absolute; content: ""; background-image: url(../images/ico-desc-bottom.png); background-repeat: no-repeat; width: 44px; height: 34px; bottom: -60px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
 .contact .sec-body .name { font-size: 18px; font-weight: 400; margin-top: 120px; }
 
