@@ -23,9 +23,7 @@ $(document).ready(function(){
   });
 
   // mixitup
-  // $(function(){
-    var mixer = mixitup('.portfolio-graphic');
-  // });
+  var mixer = mixitup('.portfolio-graphic');
 
   
   
@@ -40,14 +38,8 @@ $(document).ready(function(){
   
 
 
-  // lightbox
-  // lightbox.option({
-  //   'albumLabel': false,
-  //   'maxHeight': 1080,
-  // });
-
-
   // magnific popup
+  popAll();
   $('.graphic .btn').on('click', function(){
     console.log($(this).data('filter'));
     switch ($(this).data('filter')) {

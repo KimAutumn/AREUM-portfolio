@@ -29,7 +29,7 @@
 
 @include tablet-720 {
   .inner {
-    padding: 0 20px;
+    padding: 0 40px;
   }
   
   .container {
@@ -39,6 +39,9 @@
 }
 
 @include mobile {
+  .inner {
+    padding: 0 25px;
+  }
   .mob-br {
     display: block;
   }

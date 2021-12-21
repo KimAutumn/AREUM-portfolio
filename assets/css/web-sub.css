@@ -8,10 +8,11 @@
 
 @media screen and (max-width: 900px) { .container { padding: 0 100px; } }
 
-@media screen and (max-width: 720px) { .inner { padding: 0 20px; }
+@media screen and (max-width: 720px) { .inner { padding: 0 40px; }
   .container { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 0; } }
 
-@media screen and (max-width: 570px) { .mob-br { display: block; } }
+@media screen and (max-width: 570px) { .inner { padding: 0 25px; }
+  .mob-br { display: block; } }
 
 .inner { padding: 0; text-align: center; }
 
