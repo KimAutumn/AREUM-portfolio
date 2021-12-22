@@ -1,4 +1,4 @@
-.inner { padding: 0; text-align: center; }
+.inner { max-width: 1160px; margin: 0 auto; text-align: center; }
 
 .hd { padding-top: 50px; padding-bottom: 40px; }
 

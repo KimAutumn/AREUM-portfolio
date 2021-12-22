@@ -1,4 +1,4 @@
-.inner { padding: 0; text-align: center; }
+.inner { max-width: 1160px; margin: 0 auto; }
 
 img { display: block; width: 100%; }
 /*# sourceMappingURL=character-sub.css.map */
