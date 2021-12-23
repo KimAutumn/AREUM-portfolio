@@ -31,6 +31,24 @@
   100% { opacity: 0;
     width: 0; } }
 
+@-webkit-keyframes loading-motion { 0% { height: 57px; }
+  33% { height: 58px; }
+  66% { height: 60px; }
+  100% { height: 59px; } }
+
+@keyframes loading-motion { 0% { height: 57px; }
+  33% { height: 58px; }
+  66% { height: 60px; }
+  100% { height: 59px; } }
+
+@-webkit-keyframes loading-move { 0% { left: 0; }
+  70% { left: 78%; }
+  100% { left: 78%; } }
+
+@keyframes loading-move { 0% { left: 0; }
+  70% { left: 78%; }
+  100% { left: 78%; } }
+
 @-webkit-keyframes balloon { from { -webkit-transform: translateY(5px); transform: translateY(5px); }
   to { -webkit-transform: translateY(-5px); transform: translateY(-5px); } }
 

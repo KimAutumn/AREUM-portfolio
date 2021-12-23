@@ -1,10 +1,18 @@
 @charset 'utf-8';
 
 .loading-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5000;
+  background-color: #3f25b2;
+
   .loading {
     position: relative;
-    width: 150px;
-    height: 20px;
+    width: 250px;
+    height: 30px;
     top: 45%;
     top: -webkit-calc(50% - 10px);
     top: calc(50% - 10px);
@@ -13,13 +21,13 @@
     left: calc(50% - 75px);
     background-color: rgba($color: #25ec88, $alpha: .2);
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
-      background-color: #3f25b2;
+      background-color: #25ec88;
       top: 0;
       left: 0;
-      height: 20px;
+      height: 30px;
       width: 0;
       z-index: 0;
       opacity: 1;
@@ -28,17 +36,31 @@
       animation: loading 10s ease-in-out infinite;
     }
 
-    &:after {
+    &::after {
       content: "LOADING ...";
       color: #25ec88;
       font-weight: 200;
-      font-size: 16px;
+      font-size: 24px;
       position: absolute;
       width: 100%;
-      height: 20px;
-      line-height: 20px;
+      height: 30px;
+      line-height: 30px;
       top: 0;
       left: 0;
+      text-align: center;
+    }
+
+    .img-area {
+      position: absolute;
+      bottom: 110%;
+      left: 0;
+      animation: loading-move 10s ease-in-out infinite;
+
+      img {
+        width: 60px;
+        height: 57px;
+        animation: loading-motion 1s ease-in-out infinite;
+      }
     }
   }
 }

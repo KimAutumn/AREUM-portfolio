@@ -31,6 +31,24 @@
   100% { opacity: 0;
     width: 0; } }
 
+@-webkit-keyframes loading-motion { 0% { height: 57px; }
+  33% { height: 58px; }
+  66% { height: 60px; }
+  100% { height: 59px; } }
+
+@keyframes loading-motion { 0% { height: 57px; }
+  33% { height: 58px; }
+  66% { height: 60px; }
+  100% { height: 59px; } }
+
+@-webkit-keyframes loading-move { 0% { left: 0; }
+  70% { left: 78%; }
+  100% { left: 78%; } }
+
+@keyframes loading-move { 0% { left: 0; }
+  70% { left: 78%; }
+  100% { left: 78%; } }
+
 @-webkit-keyframes balloon { from { -webkit-transform: translateY(5px); transform: translateY(5px); }
   to { -webkit-transform: translateY(-5px); transform: translateY(-5px); } }
 
@@ -99,11 +117,17 @@
 @keyframes scroll-down { from { bottom: 35px; }
   to { bottom: 25px; } }
 
-.loading-box .loading { position: relative; width: 150px; height: 20px; top: 45%; top: calc(50% - 10px); left: 25%; left: calc(50% - 75px); background-color: rgba(37, 236, 136, 0.2); }
+.loading-box { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 5000; background-color: #3f25b2; }
 
-.loading-box .loading:before { content: ""; position: absolute; background-color: #3f25b2; top: 0; left: 0; height: 20px; width: 0; z-index: 0; opacity: 1; -webkit-transform-origin: 100% 0; transform-origin: 100% 0; -webkit-animation: loading 10s ease-in-out infinite; animation: loading 10s ease-in-out infinite; }
+.loading-box .loading { position: relative; width: 250px; height: 30px; top: 45%; top: calc(50% - 10px); left: 25%; left: calc(50% - 75px); background-color: rgba(37, 236, 136, 0.2); }
 
-.loading-box .loading:after { content: "LOADING ..."; color: #25ec88; font-weight: 200; font-size: 16px; position: absolute; width: 100%; height: 20px; line-height: 20px; top: 0; left: 0; }
+.loading-box .loading::before { content: ""; position: absolute; background-color: #25ec88; top: 0; left: 0; height: 30px; width: 0; z-index: 0; opacity: 1; -webkit-transform-origin: 100% 0; transform-origin: 100% 0; -webkit-animation: loading 10s ease-in-out infinite; animation: loading 10s ease-in-out infinite; }
+
+.loading-box .loading::after { content: "LOADING ..."; color: #25ec88; font-weight: 200; font-size: 24px; position: absolute; width: 100%; height: 30px; line-height: 30px; top: 0; left: 0; text-align: center; }
+
+.loading-box .loading .img-area { position: absolute; bottom: 110%; left: 0; -webkit-animation: loading-move 10s ease-in-out infinite; animation: loading-move 10s ease-in-out infinite; }
+
+.loading-box .loading .img-area img { width: 60px; height: 57px; -webkit-animation: loading-motion 1s ease-in-out infinite; animation: loading-motion 1s ease-in-out infinite; }
 
 .hd { background-color: #1b1b1b; position: fixed; top: 0; right: 0; left: 0; z-index: 1000; }
 
