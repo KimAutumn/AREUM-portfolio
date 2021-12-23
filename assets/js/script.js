@@ -1,4 +1,9 @@
 $(document).ready(function(){
+  // 페이지로딩
+  $(window).load(function(){
+    $('.loading-box').fadeOut();
+  });
+
   // slick 슬라이더
   $('.about-slider').slick({
     dots: true,
