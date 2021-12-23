@@ -34,12 +34,12 @@
 @-webkit-keyframes loading-motion { 0% { height: 57px; }
   33% { height: 58px; }
   66% { height: 60px; }
-  100% { height: 59px; } }
+  100% { height: 58px; } }
 
 @keyframes loading-motion { 0% { height: 57px; }
   33% { height: 58px; }
   66% { height: 60px; }
-  100% { height: 59px; } }
+  100% { height: 58px; } }
 
 @-webkit-keyframes loading-move { 0% { left: 0; }
   70% { left: 78%; }
