@@ -119,13 +119,13 @@
 
 .loading-box { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 5000; background-color: #3f25b2; }
 
-.loading-box .loading { position: relative; width: 250px; height: 30px; top: 45%; top: calc(50% - 10px); left: 25%; left: calc(50% - 75px); background-color: rgba(37, 236, 136, 0.2); }
+.loading-box .loading { position: relative; width: 250px; height: 30px; top: calc(50% - 10px); left: calc(50% - 125px); background-color: rgba(37, 236, 136, 0.2); }
 
-.loading-box .loading::before { content: ""; position: absolute; background-color: #25ec88; top: 0; left: 0; height: 30px; width: 0; z-index: 0; opacity: 1; -webkit-transform-origin: 100% 0; transform-origin: 100% 0; -webkit-animation: loading 10s ease-in-out infinite; animation: loading 10s ease-in-out infinite; }
+.loading-box .loading::before { content: ""; position: absolute; background-color: #25ec88; top: 0; left: 0; height: 30px; width: 0; z-index: 0; opacity: 1; -webkit-transform-origin: 100% 0; transform-origin: 100% 0; -webkit-animation: loading 5s ease-in-out infinite; animation: loading 5s ease-in-out infinite; }
 
 .loading-box .loading::after { content: "LOADING ..."; color: #25ec88; font-weight: 200; font-size: 24px; position: absolute; width: 100%; height: 30px; line-height: 30px; top: 0; left: 0; text-align: center; }
 
-.loading-box .loading .img-area { position: absolute; bottom: 110%; left: 0; -webkit-animation: loading-move 10s ease-in-out infinite; animation: loading-move 10s ease-in-out infinite; }
+.loading-box .loading .img-area { position: absolute; bottom: 110%; left: 0; -webkit-animation: loading-move 5s ease-in-out infinite; animation: loading-move 5s ease-in-out infinite; }
 
 .loading-box .loading .img-area img { width: 60px; height: 57px; -webkit-animation: loading-motion 1s ease-in-out infinite; animation: loading-motion 1s ease-in-out infinite; }
 

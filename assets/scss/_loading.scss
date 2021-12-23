@@ -13,12 +13,12 @@
     position: relative;
     width: 250px;
     height: 30px;
-    top: 45%;
-    top: -webkit-calc(50% - 10px);
+    // top: 45%;
+    // top: -webkit-calc(50% - 10px);
     top: calc(50% - 10px);
-    left: 25%;
-    left: -webkit-calc(50% - 75px);
-    left: calc(50% - 75px);
+    // left: 25%;
+    // left: -webkit-calc(50% - 75px);
+    left: calc(50% - 125px);
     background-color: rgba($color: #25ec88, $alpha: .2);
 
     &::before {
@@ -33,7 +33,7 @@
       opacity: 1;
       -webkit-transform-origin: 100% 0;
       transform-origin: 100% 0;
-      animation: loading 10s ease-in-out infinite;
+      animation: loading 5s ease-in-out infinite;
     }
 
     &::after {
@@ -54,7 +54,7 @@
       position: absolute;
       bottom: 110%;
       left: 0;
-      animation: loading-move 10s ease-in-out infinite;
+      animation: loading-move 5s ease-in-out infinite;
 
       img {
         width: 60px;
