@@ -327,8 +327,8 @@
   .portfolio .sec-body .list-item a .txt-area { -ms-flex-preferred-size: 100%; flex-basis: 100%; margin-top: 20px; margin-left: 0; }
   .portfolio .sec-body .list-item a .img-area { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; width: 100%; padding-top: 67.4%; background-size: cover; } }
 
-@media screen and (max-width: 720px) { .kv .kv-bg { background-image: url(../images/kv-mob.gif); background-size: cover; padding-top: 202.7%; }
-  .kv .kv-bg .kv-obj { top: 0; left: 0; width: 100%; background-image: url(../images/kv-mob-obj.png); padding: 27% 13%; }
+@media screen and (max-width: 720px) { .kv .kv-bg { background-image: url(../images/kv-mob.gif); background-size: cover; padding-top: 175%; }
+  .kv .kv-bg .kv-obj { top: 0; left: 0; width: 100%; background-image: url(../images/kv-mob-obj.png); padding: 22% 19%; }
   .portfolio .sec-body .list-item:active .txt-area .tit { -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
   .portfolio .sec-body .list-item:active .img-area.img-web { background-image: url(../images/portfolio-web-hover.gif); }
   .portfolio .sec-body .list-item:active .img-area.img-character { background-image: url(../images/portfolio-character-hover.gif); }
