@@ -58,12 +58,17 @@ $(document).ready(function(){
         if (checkVisible($('.kv'))&&!isVisible) {
           console.log('kv영역');
           $('.quick').addClass('hide');
-          isVisible=true;
+          isVisible = true;
+        }
+
+        else if (checkVisible($('.ft'))&&!isVisible) {
+          $('.quick').addClass('hide');
+          isVisible = true;
         }
     
         else 
           $('.quick').removeClass('hide');
-          isVisible=false
+          isVisible = false
       });
     
       function checkVisible( elm, eval ) {
