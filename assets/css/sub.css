@@ -135,7 +135,7 @@
 
 .hd .logo { line-height: 80px; }
 
-.hd .logo img { width: 204px; display: block; }
+.hd .logo img { width: 100%; display: block; }
 
 .hd .gnb { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -158,7 +158,7 @@
 .hd .gnb .dep1 .dep2 a:hover { background-color: #fff; color: #3b21b0; }
 
 @media screen and (max-width: 900px) { .hd .logo { margin: 0 auto; }
-  .hd .logo a img { width: 100%; padding: 16.5px 0; }
+  .hd .logo a img { width: 100%; padding: 21px 0; line-height: 80px; }
   .hd .gnb { background-color: rgba(59, 33, 176, 0.9); position: fixed; top: -100%; right: 0; left: 0; display: block; text-align: center; padding-top: 100px; -webkit-transition: all 0.9s; transition: all 0.9s; opacity: 0; }
   .hd .gnb a { font-size: 36px; font-weight: 500; }
   .hd .gnb .dep1 { line-height: 100px; margin-left: 0; }
@@ -283,7 +283,7 @@
   .character .content .content-list .list-item { -ms-flex-preferred-size: calc(100% - 24px); flex-basis: calc(100% - 24px); }
   .graphic .content .portfolio-graphic .mix { -ms-flex-preferred-size: calc(100% - 24px); flex-basis: calc(100% - 24px); } }
 
-@media screen and (max-width: 720px) { .kv { background-size: cover; padding-top: 202.7%; }
+@media screen and (max-width: 720px) { .kv { background-size: cover; padding-top: 175%; }
   .kv .tit { font-size: 9.333vw; }
   .kv .scroll-down img { width: 80%; }
   .web .kv { background-image: url(../images/kv-web-mob.png); }
