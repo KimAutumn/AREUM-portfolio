@@ -273,7 +273,7 @@
   .character .content .content-list .list-item { -ms-flex-preferred-size: calc(100% - 24px); flex-basis: calc(100% - 24px); }
   .graphic .content .portfolio-graphic .mix { -ms-flex-preferred-size: calc(100% - 24px); flex-basis: calc(100% - 24px); } }
 
-@media screen and (max-width: 720px) { .kv { background-size: cover; padding-top: 175%; }
+@media screen and (max-width: 720px) { .kv { background-size: cover; padding-top: 161.1%; }
   .kv .tit { font-size: 9.333vw; }
   .kv .scroll-down img { width: 80%; }
   .web .kv { background-image: url(../images/kv-web-mob.png); }
