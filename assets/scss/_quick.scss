@@ -1,111 +1,117 @@
 // quick
-[class^= 'quick-'] {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: fixed;
-  width: 55px;
-  height: 52px;
-
-  .img-box {
-    display: none;
-    position: relative;
-
-    img {
-      position: absolute;
-      top: -35px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  &:hover {
-    .img-box {
-      display: block;
-    }
-  }
-}
-
-.quick-green {
-  background-image: url(../images/quick-green.png);
-  bottom: 300px;
-  animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) both;
-
-  .img-box {
-    img {
-      width: 59px;
-    }
-  }
-
-  &:hover {
-    background-image: url(../images/quick-green-hover.png);
-  }
-}
-
-.quick-yellow {
-  background-image: url(../images/quick-yellow.png);
-  bottom: 200px;
-  animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.2s both;
-
-  .img-box {
-    img {
-      width: 121px;
-    }
-  }
-
-  &:hover {
-    background-image: url(../images/quick-yellow-hover.png);
-  }
-}
-
-.quick-pink {
-  background-image: url(../images/quick-pink.png);
-  bottom: 100px;
-  animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.4s both;
+.quick {
+  [class^= 'quick-'] {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    width: 55px;
+    height: 52px;
   
-  .img-box {
-    img {
-      width: 100px;
+    .img-box {
+      display: none;
+      position: relative;
+  
+      img {
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  
+    &:hover {
+      .img-box {
+        display: block;
+      }
     }
   }
- 
-  &:hover {
-    background-image: url(../images/quick-pink-hover.png);
+  
+  .quick-green {
+    background-image: url(../images/quick-green.png);
+    bottom: 300px;
+    animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) both;
+  
+    .img-box {
+      img {
+        width: 59px;
+      }
+    }
+  
+    &:hover {
+      background-image: url(../images/quick-green-hover.png);
+    }
+  }
+  
+  .quick-yellow {
+    background-image: url(../images/quick-yellow.png);
+    bottom: 200px;
+    animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.2s both;
+  
+    .img-box {
+      img {
+        width: 121px;
+      }
+    }
+  
+    &:hover {
+      background-image: url(../images/quick-yellow-hover.png);
+    }
+  }
+  
+  .quick-pink {
+    background-image: url(../images/quick-pink.png);
+    bottom: 100px;
+    animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.4s both;
+    
+    .img-box {
+      img {
+        width: 100px;
+      }
+    }
+   
+    &:hover {
+      background-image: url(../images/quick-pink-hover.png);
+    }
   }
 }
 
 @include tablet-720 {
-  [class^= 'quick-'] {
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .quick-green {
-    transform: translateX(-250%);
-    animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) both;
-    left: 47%;
-
-    &:active {
-      background-image: url(../images/quick-green-hover.png);
+  .quick {
+    [class^= 'quick-'] {
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .quick-green {
+      transform: translateX(-250%);
+      animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) both;
+      left: 47%;
+    }
+  
+    .quick-yellow {
+      animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) 0.2s both;
+    }
+  
+    .quick-pink {
+      transform: translateX(150%);
+      animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) 0.4s both;
+      left: 53%;
     }
   }
 
-  .quick-yellow {
-    animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) 0.2s both;
-    
-    &:active {
-      background-image: url(../images/quick-yellow-hover.png);
+  .quick.hide {
+    .quick-green {
+      animation: quick-mob-2 0.6s ease-in-out 0.4s both;
     }
-  }
 
-  .quick-pink {
-    transform: translateX(150%);
-    animation: quick-mob-1 0.6s cubic-bezier(0,-0.04, 0.41, 0.95) 0.4s both;
-    left: 53%;
+    .quick-yellow {
+      animation: quick-mob-2 0.6s ease-in-out 0.2s both;
+    }
 
-    &:active {
-      background-image: url(../images/quick-pink-hover.png);
+    .quick-pink {
+      animation: quick-mob-2 0.6s ease-in-out both;
     }
   }
 }

@@ -89,32 +89,7 @@
     right: 60px;
   }
 }
-// @keyframes quick-2 {
-//   0% {
-//     transform: translateX(500%);
-//   }
 
-//   20% {
-//     transform: translateX(500%);
-//   }
-
-//   80% {
-//     transform: translateX(0);
-//   }
-// }
-// @keyframes quick-3 {
-//   0% {
-//     transform: translateX(500%);
-//   }
-
-//   40% {
-//     transform: translateX(500%);
-//   }
-
-//   100% {
-//     transform: translateX(0);
-//   }
-// }
 
 // quick 모바일버전 효과
 @keyframes quick-mob-1 {
@@ -126,32 +101,17 @@
     bottom: 50px;
   }
 }
+
 @keyframes quick-mob-2 {
   0% {
-    transform: translateY(500%);
-  }
-
-  20% {
-    transform: translateY(500%);
-  }
-
-  80% {
-    transform: translateY(0);
-  }
-}
-@keyframes quick-mob-3 {
-  0% {
-    transform: translateY(500%);
-  }
-
-  40% {
-    transform: translateY(500%);
+    bottom: 50px;
   }
 
   100% {
-    transform: translateY(0);
+    bottom: -150px;
   }
 }
+
 
 // 포트폴리오 텍스트 후버효과
 @keyframes tracking-in-contract {
