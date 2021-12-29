@@ -292,23 +292,23 @@
 
 .quick [class^='quick-']:hover .img-box { display: block; }
 
-.quick .quick-green { background-image: url(../images/quick-green.png); bottom: 300px; -webkit-animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) both; animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) both; }
+.quick .quick-green { background: url(../images/quick-green.png) -10px -10px; bottom: 300px; -webkit-animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) both; animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) both; }
 
 .quick .quick-green .img-box img { width: 59px; }
 
-.quick .quick-green:hover { background-image: url(../images/quick-green-hover.png); }
+.quick .quick-green:hover { background: url(../images/quick-green.png) -85px -10px; }
 
-.quick .quick-yellow { background-image: url(../images/quick-yellow.png); bottom: 200px; -webkit-animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) 0.2s both; animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) 0.2s both; }
+.quick .quick-yellow { background: url(../images/quick-yellow.png) -85px -10px; bottom: 200px; -webkit-animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) 0.2s both; animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) 0.2s both; }
 
 .quick .quick-yellow .img-box img { width: 121px; }
 
-.quick .quick-yellow:hover { background-image: url(../images/quick-yellow-hover.png); }
+.quick .quick-yellow:hover { background: url(../images/quick-yellow.png) -10px -10px; }
 
-.quick .quick-pink { background-image: url(../images/quick-pink.png); bottom: 100px; -webkit-animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) 0.4s both; animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) 0.4s both; }
+.quick .quick-pink { background: url(../images/quick-pink.png) -85px -10px; bottom: 100px; -webkit-animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) 0.4s both; animation: quick-1 0.8s cubic-bezier(0, -0.04, 0.41, 0.95) 0.4s both; }
 
 .quick .quick-pink .img-box img { width: 100px; }
 
-.quick .quick-pink:hover { background-image: url(../images/quick-pink-hover.png); }
+.quick .quick-pink:hover { background: url(../images/quick-pink.png) -10px -10px; }
 
 @media screen and (max-width: 720px) { .quick [class^='quick-'] { bottom: 50px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
   .quick .quick-green { -webkit-transform: translateX(-250%); transform: translateX(-250%); -webkit-animation: quick-mob-1 0.6s cubic-bezier(0, -0.04, 0.41, 0.95) both; animation: quick-mob-1 0.6s cubic-bezier(0, -0.04, 0.41, 0.95) both; left: 47%; }

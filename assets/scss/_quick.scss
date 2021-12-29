@@ -28,7 +28,7 @@
   }
   
   .quick-green {
-    background-image: url(../images/quick-green.png);
+    background: url(../images/quick-green.png) -10px -10px;
     bottom: 300px;
     animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) both;
   
@@ -39,12 +39,12 @@
     }
   
     &:hover {
-      background-image: url(../images/quick-green-hover.png);
+      background: url(../images/quick-green.png) -85px -10px;
     }
   }
   
   .quick-yellow {
-    background-image: url(../images/quick-yellow.png);
+    background: url(../images/quick-yellow.png) -85px -10px;
     bottom: 200px;
     animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.2s both;
   
@@ -55,12 +55,12 @@
     }
   
     &:hover {
-      background-image: url(../images/quick-yellow-hover.png);
+      background: url(../images/quick-yellow.png) -10px -10px;
     }
   }
   
   .quick-pink {
-    background-image: url(../images/quick-pink.png);
+    background: url(../images/quick-pink.png) -85px -10px;
     bottom: 100px;
     animation: quick-1 0.8s cubic-bezier(0,-0.04, 0.41, 0.95) 0.4s both;
     
@@ -71,7 +71,7 @@
     }
    
     &:hover {
-      background-image: url(../images/quick-pink-hover.png);
+      background: url(../images/quick-pink.png) -10px -10px;
     }
   }
 }
