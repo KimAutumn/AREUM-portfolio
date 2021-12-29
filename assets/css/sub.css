@@ -240,11 +240,13 @@
 
 .graphic .content .portfolio-graphic { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -12px; }
 
-.graphic .content .portfolio-graphic .mix { -webkit-box-flex: 0; -ms-flex: 0 1 calc((100% / 3) - 24px); flex: 0 1 calc((100% / 3) - 24px); margin: 0 12px 24px; overflow: hidden; }
+.graphic .content .portfolio-graphic .mix { position: relative; width: 100%; padding-top: calc((100% / 3) - 24px); -webkit-box-flex: 0; -ms-flex: 0 1 calc((100% / 3) - 24px); flex: 0 1 calc((100% / 3) - 24px); margin: 0 12px 24px; overflow: hidden; }
 
-.graphic .content .portfolio-graphic .mix:hover img { -webkit-transform: scale(1.1); transform: scale(1.1); }
+.graphic .content .portfolio-graphic .mix:hover img { -webkit-transform: translate(-50%, -50%) scale(1.1); transform: translate(-50%, -50%) scale(1.1); }
 
-.graphic .content .portfolio-graphic .mix img { display: block; width: 100%; -webkit-transition: all 1s; transition: all 1s; }
+.graphic .content .portfolio-graphic .mix img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); display: block; width: 100%; -webkit-transition: all 1s; transition: all 1s; }
+
+.graphic .content .portfolio-graphic .mix .rect-h { width: auto; height: 100%; }
 
 .mfp-arrow:after { border-right: none; border-left: none; width: 20px; background-image: url(../images/mfp-arrow.png); background-size: cover; background-repeat: no-repeat; background-position: center; padding-top: 10%; }
 

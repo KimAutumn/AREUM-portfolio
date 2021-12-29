@@ -220,20 +220,32 @@
       margin: 0 -12px;
 
       .mix {
+        position: relative;
+        width: 100%;
+        padding-top: calc((100% / 3) - 24px);
         flex: 0 1 calc((100% / 3) - 24px);
         margin: 0 12px 24px;
         overflow: hidden;
         
         &:hover {
           img {
-            transform: scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1);
           }
         }
        
         img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           display: block;
           width: 100%;
           transition: all 1s;
+        }
+
+        .rect-h {
+          width: auto;
+          height: 100%;
         }
       }
     }
@@ -243,7 +255,6 @@
 // magnific-popup
 .mfp-arrow {
   &:after {
-    // background-color: red;
     border-right: none;
     border-left: none;
     width: 20px;
