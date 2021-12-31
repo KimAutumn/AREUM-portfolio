@@ -261,7 +261,7 @@
   .character .content .content-list { margin: 0; }
   .character .content .content-list .list-item { -ms-flex-preferred-size: calc((100% / 2) - 24px); flex-basis: calc((100% / 2) - 24px); }
   .graphic .content .portfolio-graphic { margin: 0; }
-  .graphic .content .portfolio-graphic .mix { -ms-flex-preferred-size: calc((100% /2) - 24px); flex-basis: calc((100% /2) - 24px); } }
+  .graphic .content .portfolio-graphic .mix { padding-top: calc((100% /2) - 24px); -ms-flex-preferred-size: calc((100% /2) - 24px); flex-basis: calc((100% /2) - 24px); } }
 
 @media screen and (max-width: 900px) { .kv .tit { font-size: 8vw; bottom: 100px; }
   .kv .scroll-down img { width: 90%; }
@@ -273,7 +273,7 @@
   .web .content .cont-left { margin-right: 10%; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
   .web .content .cont-left .txt-area { margin-right: 0; }
   .character .content .content-list .list-item { -ms-flex-preferred-size: calc(100% - 24px); flex-basis: calc(100% - 24px); }
-  .graphic .content .portfolio-graphic .mix { -ms-flex-preferred-size: calc(100% - 24px); flex-basis: calc(100% - 24px); } }
+  .graphic .content .portfolio-graphic .mix { padding-top: calc(100% - 24px); -ms-flex-preferred-size: calc(100% - 24px); flex-basis: calc(100% - 24px); } }
 
 @media screen and (max-width: 720px) { .kv { background-size: cover; padding-top: 161.1%; }
   .kv .tit { font-size: 9.333vw; }

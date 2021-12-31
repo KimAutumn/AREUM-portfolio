@@ -319,7 +319,9 @@
     .content {
       .portfolio-graphic {
         margin: 0;
+
         .mix {
+          padding-top: calc((100% /2) - 24px);
           flex-basis: calc((100% /2) - 24px);
         }
       }
@@ -392,6 +394,7 @@
     .content {
       .portfolio-graphic {
         .mix {
+          padding-top: calc(100% - 24px);
           flex-basis: calc(100% - 24px);
         }
       }
